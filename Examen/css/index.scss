@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// Variables globales
+$color-blanco: #fff;
+$color-negro: #000;
+$fuente-principal: "Be Vietnam Pro", sans-serif;
+$transicion: 0.3s ease;
+$color-amarillo: #ffcc00;   // Amarillo
+$color-naranja: #ff6600; 
+
+// Reset global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente-principal;
+    color: $color-blanco;
+    background-color: $color-blanco;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-blanco;
+    font-weight: bold;
+}
+  
+p {
+color: $color-blanco;
+line-height: 1.6;
+}
+
+a {
+  color: $color-amarillo; /* amarillo */
+  text-decoration: none;
+  &:hover {
+    color: $color-naranja; /* naranja */
+    text-decoration: none;
+  }
+}
+
+// a:hover {
+//   color: $color-naranja; /* naranja */
+//     text-decoration: none;
+// }
+
+.seccion {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+.seccion2 {
+  background-image: url("../img/fondo2.avif");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fondo {
+  background-color: $color-negro;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+
+  @media (max-width: 576px) {
+    font-size: 30px;
+  }
+}
+
+ul {
+  list-style-type: disc;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.fecha {
+  font-size: 15px;
+}
+
+.descripcion {
+  font-weight: lighter;
+}
+
+
+
+.textoNegro {
+  color: $color-negro;
+}
+
+.eventos {
+  ul {
+    list-style-type: disc; // Cambia 'disc' por 'circle', 'square', o 'none' según prefieras
+    padding-left: 20px; // Ajusta el espaciado si es necesario
+
+    li {
+      margin-bottom: 10px; // Añade espacio entre los elementos
+    }
+  }
+}
+
+.entradas {
+  font-weight: bold !important;
+}
+
+.container-botonws {
+  // color de fondo imagen
+  // background-color: #e4e4e4;
+  // border: 1px solid $color-blanco;
+
+  // posición fija
+  position: fixed;
+
+  // prioridad al botón
+  z-index: 1000;
+
+  // forma circular
+  border-radius: 50%;
+  bottom: 60px;
+  right: 25px;
+  padding: 25px;
+  transition: $transicion;
+  animation: efecto 1.2s infinite;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: $transicion;
+  }
+}
+
+.goto-top {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  width: 55px;
+  height: 50px;
+}
+
+// .nav-link {
+//   color: $color-blanco;
+// }
+
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 10000;
+  transition: $transicion;
+
+  .navbar-collapse {
+    text-align: center;
+
+    .nav-link {
+      color: $color-blanco;
+      transition: $transicion;
+
+      &:hover {
+        color: $color-amarillo;
+      }
+    }
+
+    .nav-item {
+      transition: $transicion;
+    }
+  }
+
+  .navbar-toggler {
+    background-color: $color-blanco;
+
+    &:hover {
+      background-color: $color-blanco;
+    }
+  }
+}
+
+
+// Efecto de animación imagen chat
+.botonws {
+  width: 60px; // tamaño del ícono
+  transition: ease 1s;
+}
