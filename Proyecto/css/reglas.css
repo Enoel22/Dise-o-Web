@@ -1,0 +1,20 @@
+
+
+
+/* Mostrar el dropdown al hacer clic en pantallas pequeñas */
+@media (max-width: 991.98px) { /* Pantallas pequeñas (md y menores) */
+    .nav-item .dropdown-menu {
+        display: block !important; /* Siempre visible */
+        opacity: 1;
+        position: static; /* Ajuste natural dentro del contenedor */
+        transform: none; /* Sin transformaciones */
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        text-align: center; /* Centrar el contenido */
+    }
+    .nav-item .dropdown-menu .dropdown-item:hover {
+        color: #ffcc00; /* Cambiar el color en hover */
+        background-color: transparent;
+    }
+}

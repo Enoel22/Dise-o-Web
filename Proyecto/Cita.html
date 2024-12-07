@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BarberShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="img/Barber-Logo-Icon.svg">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reglas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin="anonymous"></script>
+    
+
+  </head>
+
+
+  <body id="inicio">
+
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg navigation-wrap fondo">
+          <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <h3 class="text-center">BARBER SHOP</h3>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="fas fa-bars"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Servicios.html">SERVICIOS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="FAQ.html">FAQ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">PRODUCTOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Galeria.html">GALERÍA</a>
+                      </li>
+                      <li class="nav-item px-2">
+                          <a href="Cita.html" class="btn btn-outline-light rounded-pill">AGENDÁ TU CITA</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+    <header class="container-fluid cita px-5">
+      <div class="container">
+        <h3 class=" display-1 text-white"><b>AGENDÁ TU CITA</h3>
+      </div>
+    </header>
+
+
+
+    <section class="py-5" id="t3">
+      <div class="">
+          <div class="container">
+              <!-- Formulario de citas para barbería -->
+              <form method="post">
+                  
+                  <!-- Nombre y correo -->
+                  <div class="form-group row">
+                      <div class="col-6">
+                          <div class="pt-3">
+                              <label for="name">Nombre:</label>
+                              <input type="text" id="name" class="form-control rounded-pill" placeholder="Escriba su nombre" required>
+                          </div>
+                      </div>
+                      <div class="col-6">
+                          <div class="pt-3">
+                              <label for="email">Correo:</label>
+                              <input type="email" id="email" class="form-control rounded-pill" placeholder="Escriba su correo" required>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Fecha y hora -->
+                  <div class="form-group row pt-4">
+                      <div class="col-6">
+                          <div class="pt-3">
+                              <label for="date">Fecha:</label>
+                              <input type="date" id="date" class="form-control rounded-pill" required>
+                          </div>
+                      </div>
+                      <div class="col-6">
+                          <div class="pt-3">
+                              <label for="time">Hora:</label>
+                              <input type="time" id="time" class="form-control rounded-pill" required>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Tipo de servicio -->
+                  <div class="form-group row pt-4">
+                      <div class="col-12">
+                          <label for="service">Tipo de servicio:</label>
+                          <select id="service" class="form-control rounded-pill" required>
+                              <option value="" disabled selected>Seleccione un servicio</option>
+                              <option value="corte">Corte de cabello</option>
+                              <option value="barba">Afeitado de barba</option>
+                              <option value="combo">Corte y barba</option>
+                              <option value="otros">Niño</option>
+                          </select>
+                      </div>
+                  </div>
+                  
+                  <!-- Mensaje adicional -->
+                  <div class="form-group row pt-4">
+                      <div class="col-12">
+                          <label for="message">Comentario adicional:</label>
+                          <textarea id="message" class="form-control rounded-4" rows="5" placeholder="Opcional"></textarea>
+                      </div>
+                  </div>
+                  
+                  <!-- Botones -->
+                  <div class="pt-5 text-center">
+                      <button type="submit" class="btn btn-warning rounded-pill px-4">Reservar cita</button>
+                      <button type="reset" class="btn btn-secondary rounded-pill px-4">Limpiar</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </section>
+  
+
+    
+
+
+
+
+    <a href="#inicio">
+      <div class="botonScrollTop">
+          <i class="fas fa-angle-up"></i>
+      </div>
+    </a>
+
+
+    <footer class="text-center footer1">
+
+      <div class="container pt-4">
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1 social-icon"
+            href="https://www.facebook.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1 social-icon"
+            href="https://x.com/?lang=es"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1 social-icon"
+            href="https://www.instagram.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Whatsapp -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1 social-icon"
+            href="https://www.whatsapp.com/?lang=es_LA"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="uil uil-whatsapp"></i
+          ></a>
+
+
+        </section>
+      </div>
+    
+
+      <div class="text-center p-3">
+        © 2024 Cenfotec
+      </div>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="js/jquery.vide.js"></script>
+
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+  </body>
+
+</html>
